@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  /* font-weight: 100; */
+    font-style: normal;
+    background-color: #191B20;
+}
+.crbox{
+    position: relative;
+    /* transition: all linear 0.5s; */
+}
+.crsr{
+    height: 8vw;
+    width: 8vw;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    mix-blend-mode: difference;
+    transition: all linear 0.5s;
+}
+.box{
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    font-size: 10vw;
+    font-weight: 700;
+    color: #24cfa6;
+}
+.cont{
+    display: inline-block;
+}
+.cont p{
+    letter-spacing: 3px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+    background-color: #24cfa6;
+    animation: 
+              typing 2s steps(1200),
+              cursor .4s step-end infinite alternate;
+}
+footer{
+    position: fixed;
+    color: white;
+    bottom: 1vh;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.foot p:hover{
+    color: #24cfa6;
+    
+}
+@keyframes cursor{
+    50%{ border-color: transparent }
+}
+@keyframes typing{
+    from { width: 0 }
+}
+
+
+     /* For phone view */
+
+@media (max-width:600px) {
+    
+}
